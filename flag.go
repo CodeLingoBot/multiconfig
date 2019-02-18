@@ -198,7 +198,7 @@ func (f *fieldValue) IsZero() bool {
 	return f.field == nil
 }
 
-// This is an unexported interface, be careful about it.
+// IsBoolFlag is an unexported interface, be careful about it.
 // https://code.google.com/p/go/source/browse/src/pkg/flag/flag.go?name=release#101
 func (f *fieldValue) IsBoolFlag() bool {
 	return f.field.Kind() == reflect.Bool
